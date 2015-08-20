@@ -4,4 +4,4 @@ function x(a,b){
 return a + b + 5;
 }
 
-console.log( x({add:function(x){return x*10;}},2) );
+console.log( x({add:function(x){return x*10;}},2) ); //25
