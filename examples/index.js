@@ -1,7 +1,7 @@
 var Cor = require('babel-plugin-operator-overloading/runtime');
 
-function x(a,b){
+function sum(a,b){
 return a + b + 5;
 }
 
-console.log( x({add:function(x){return x*10;}},2) ); //25
+console.log( sum( {add:(x)=>x*10} , 2 ) ); //25
